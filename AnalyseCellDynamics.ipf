@@ -57,6 +57,7 @@ else
 	make /o/n=(DimSize(traces, 0)-1) tr
 endif
 setscale /p x,dimoffset(traces,0),dimdelta(traces,0),waveunits(traces,0) tr
+tr[] = traces[p][traceNumber]
 WignerTransform /Gaus=(gaus) tr
 wave m_wigner
 duplicate /o m_wigner, $("m_wigner"+num2str(traceNumber))
