@@ -16,7 +16,7 @@ wave v, tW, iW, pW,a
 GetAllDynamics(v, tW, iW, pW, numTraces, minLength)
 wave traces
 duplicate /o traces, tr
-GetAllDynamics(a, tW, iW, pW, 75, 2800)
+GetAllDynamics(a, tW, iW, pW, numTraces, minLength)
 tr[][] /= traces[p][q]
 SelectTracesBiggerThanValue (tr, minlength)
 wave fullSizeTRaces
