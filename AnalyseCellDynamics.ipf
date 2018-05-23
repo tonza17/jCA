@@ -25,9 +25,10 @@ killwaves traces, tr
 wave corMatrix,  results, trace, trace1, trace2, fullsizeuncortraces
 killwaves corMatrix,  results, trace, trace1, trace2, fullSizeTraces, traces
 SetScale/P x 0, 1/framesPerSecond,"", fullsizeuncortraces
-rename fullsizeuncortraces, traces
 
 CalculatePower (traces)
+rename fullsizeuncortraces, traces
+
 wave allPowers
 allPowers[0]=nan
 end
