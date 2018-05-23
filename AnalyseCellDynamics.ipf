@@ -328,7 +328,7 @@ variable numtr=DimSize(db, 1)
 variable i=0
 variable v_avg
 variable num=0
-if (mod(DimSize(db, 0), 0)==0)
+if (mod(DimSize(db, 0), 2)==0)
 	make /o/n=(DimSize(db, 0)) tr
 else
 	make /o/n=(DimSize(db, 0)-1) tr
